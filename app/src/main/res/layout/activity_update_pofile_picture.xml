@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    tools:context=".UpdatePofilePicture">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/update_back_btn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:src="@drawable/back_arrow"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Profile photo"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textSize="25sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="25dp"/>
+
+            <ImageButton
+                android:id="@+id/update_camera_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="145dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:src="@drawable/icon_camera"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/update_profile_view"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginTop="90dp"
+            android:src="@drawable/userrprofile2"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Upload"
+            android:textColor="@color/black"
+            android:id="@+id/uploadbtn"/>
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleLarge"
+            android:visibility="gone"
+            android:layout_gravity="center"
+
+            android:elevation="10dp"/>
+    </LinearLayout>
+</ScrollView>

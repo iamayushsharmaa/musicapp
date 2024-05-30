@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/refreshbtn"
+        android:title="@string/refresh"
+        android:icon="@drawable/icon_refrsh"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="1"
+        android:alphabeticShortcut="r"
+        />
+    <item
+        android:id="@+id/updatename"
+        android:title="@string/update_name"
+        />
+    <item
+        android:id="@+id/updateemail"
+        android:title="@string/update_email"
+        />
+    <item
+        android:id="@+id/updatePhonenumber"
+        android:title="@string/update_phone_number"
+        />
+    <item
+        android:id="@+id/updateDob"
+        android:title="@string/update_dob"
+        />
+    <item
+        android:id="@+id/updatepassword"
+        android:title="@string/update_password"
+        />
+
+</menu>

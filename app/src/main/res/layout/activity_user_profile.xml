@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".UserProfileActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:menu="@menu/update_menu"
+            tools:ignore="MissingConstraints">
+
+            <ImageButton
+                android:id="@+id/backbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:src="@drawable/back_button"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="7dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/userProfile"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <ImageView
+            android:id="@+id/profilePhoto"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="128dp"
+            android:layout_marginTop="48dp"
+            android:src="@drawable/userrprofile2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
+
+
+        <TextView
+            android:id="@+id/heyayushtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="136dp"
+            android:layout_marginTop="13dp"
+            android:text="Hey! Ayush"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profilePhoto" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="68dp"
+            android:background="@color/white"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profilePhoto"
+            app:layout_constraintVertical_bias="0.0">
+
+            <ImageView
+                android:id="@+id/userIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/icon_user" />
+
+            <TextView
+                android:id="@+id/nameprofiletxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/userIcon"
+                android:layout_alignParentTop="true"
+
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="18dp"
+                android:text="Ayush sharma"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/linegrey1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/nameprofiletxt"
+                android:layout_marginTop="20dp"
+                android:background="@color/material_dynamic_neutral50" />
+
+            <ImageView
+                android:id="@+id/emailIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/linegrey1"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:layout_marginStart="25dp"
+                android:src="@drawable/icon_email" />
+
+            <TextView
+                android:id="@+id/emailuserprofile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linegrey1"
+
+                android:layout_alignStart="@+id/userIcon"
+
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="18dp"
+                android:text="ayushs9468@gamilcom"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/linegrey2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/emailuserprofile"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/material_dynamic_neutral50" />
+
+            <ImageView
+                android:id="@+id/phoneIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/linegrey2"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:src="@drawable/iconmonstr_phone_1" />
+
+            <TextView
+                android:id="@+id/phoneNumTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linegrey2"
+
+                android:layout_alignStart="@+id/phoneIcon"
+
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="18dp"
+                android:text="9179xxxxxxx"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/linegrey3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/phoneNumTxt"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="4dp"
+                android:background="@color/material_dynamic_neutral50" />
+
+            <ImageView
+                android:id="@+id/dobIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/linegrey3"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:src="@drawable/icon_calendar" />
+
+            <TextView
+                android:id="@+id/dobuserprofile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linegrey3"
+                android:layout_alignStart="@+id/dobIcon"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="18dp"
+                android:text="DD/MM/YYYY"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/linegrey4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/dobIcon"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5dp"
+
+                android:layout_marginEnd="4dp"
+                android:background="@color/material_dynamic_neutral50" />
+
+            <ImageView
+                android:id="@+id/passwordIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/linegrey4"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:src="@drawable/icon_password" />
+
+            <TextView
+                android:id="@+id/pwuserprofile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linegrey4"
+                android:layout_alignStart="@+id/passwordIcon"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="18dp"
+                android:text="xxxxxx"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/linegrey5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/pwuserprofile"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="4dp"
+                android:background="@color/material_dynamic_neutral50" />
+
+        </RelativeLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>

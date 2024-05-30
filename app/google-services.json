@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "470722369394",
+    "project_id": "news-login-screen",
+    "storage_bucket": "news-login-screen.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470722369394:android:7442f0175411ab541eefeb",
+        "android_client_info": {
+          "package_name": "com.example.news"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCM9Fk_XjqqHqeFc6hkZYYagqzcFXDP-jI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
